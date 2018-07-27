@@ -34,16 +34,25 @@ void baixoPlayer1(){
 }
 
 void cimaPlayer1(){
-	if(p1X>0)
-		p1X++;
+	if(p1Y>0){
+		mat[p1Y][p1X] = ' ';
+		p1Y--;
+		mat[p1Y][p1X] = '|';	
+	}
 }
 
 void baixoPlayer2(){
-	if(p2Y<6)
+	if(p2Y<6){
+		mat[p2Y][p2X] = ' ';
 		p2Y++;
+		mat[p2Y][p2X] = '|';	
+	}
 }
 
 void cimaPlayer2(){
-	if(p2X>0)
-		p2X++;
+	if(p2Y>0){
+		mat[p2Y][p2X] = ' ';
+		p2Y--;
+		mat[p2Y][p2X] = '|';	
+	}
 }
