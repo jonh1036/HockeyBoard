@@ -1,7 +1,8 @@
 #include<stdio.h>
+#include<stdlib.h>
 
 extern char mat[7][7], opcao;
-extern int p1X, p1Y, p2A, p2B, bolaX, bolaY;
+extern int p1X, p1Y, p2X, p2Y, bolaX, bolaY;
 
 void verifica();
 void baixoPlayer1();
@@ -25,8 +26,11 @@ void verifica(){
 }
 
 void baixoPlayer1(){
-	if(p1Y<6)
+	if(p1Y<6){
+		mat[p1Y][p1X] = ' ';
 		p1Y++;
+		mat[p1Y][p1X] = '|';	
+	}
 }
 
 void cimaPlayer1(){

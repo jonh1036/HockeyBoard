@@ -2,6 +2,7 @@
 
 void inicializaNomes();
 void inicializaMatriz();
+void impressao();
 
 extern char player1[15], player2[15];
 extern char mat[7][7];
@@ -23,4 +24,20 @@ void inicializaMatriz(){
 	mat[3][0] = '|';
 	mat[3][3] = '*';
 	mat[3][6] = '|';
+	impressao();
+}
+
+void impressao(){
+    int i, j;
+    
+    for(i = 0; i < 7; i++){
+        //printf("|");
+        for(j = 0; j < 7; j++){
+            if(mat[i][j] == ' ')
+                printf("     ");
+            else
+                printf("  %c  ",mat[i][j]);
+        }
+        printf("\n");
+    }
 }
