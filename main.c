@@ -10,6 +10,10 @@ int main(){
 	inicializaNomes();
 	system("cls");
 	inicializaMatriz();
+	while(1){
+		opcao = getch();
+		verifica(tecla);
+	}
 	
 	return 0;
 }
