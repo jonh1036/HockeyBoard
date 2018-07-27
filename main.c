@@ -9,7 +9,7 @@ int vPlayer1 = 0, vPlayer2 = 0;
 int main(){
 	inicializaNomes();
 	system("cls");
-	
+	inicializaMatriz();
 	
 	return 0;
 }
